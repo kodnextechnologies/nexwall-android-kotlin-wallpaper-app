@@ -117,6 +117,7 @@ Values in `BuildConfig` are compiled into the APK and can be extracted by anyone
 - [Flutter wallpaper app](https://github.com/kodnextechnologies/nexwall-flutter-wallpaper-app)
 - [React Native / Expo wallpaper app](https://github.com/kodnextechnologies/nexwall-react-native-expo-wallpaper-app)
 - [Python client and CLI with a daily wallpaper changer](https://github.com/kodnextechnologies/nexwall-python)
+- [Web starter: Next.js / React, Laravel and plain JavaScript (API key kept server-side)](https://github.com/kodnextechnologies/nexwall-web-starter)
 
 ## License
 
