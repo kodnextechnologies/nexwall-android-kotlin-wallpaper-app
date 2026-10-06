@@ -1,0 +1,3 @@
+# Copy to local.properties (git-ignored). Android Studio adds sdk.dir automatically.
+# Free key: https://nexwall.kodnextech.com/developers/register
+NEXWALL_API_KEY=paste_your_free_key_here

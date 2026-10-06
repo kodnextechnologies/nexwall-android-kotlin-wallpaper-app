@@ -1,0 +1,4 @@
+<resources>
+    <!-- Compose draws the UI; this platform theme only styles the window. -->
+    <style name="Theme.NexWall" parent="android:Theme.Material.NoActionBar" />
+</resources>
