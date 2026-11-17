@@ -99,11 +99,14 @@ Full reference: [API docs](https://nexwall.kodnextech.com/wallpaper-api/docs) ·
 
 | Plan | Price | Requests per day | Content |
 | --- | --- | --- | --- |
-| Free | Free, no credit card | 100 | Non-premium categories |
-| Pro | ₹399 / $4.99 per month | 10,000 | |
-| Ultra | ₹899 / $10.99 per month | 50,000 | Includes live (video) wallpapers |
+| Free | Free, no credit card | 100 | Non-premium static wallpapers |
+| Pro | ₹399 / $4.99 per month | 10,000 | Adds the premium static categories |
+| Ultra | ₹899 / $10.99 per month | 50,000 | Adds live (video) wallpapers (Ultra only) |
+
+Commercial use (ads, subscriptions, in-app purchases, paid apps) is allowed on every plan, including Free, under the [NexWall Developer API License](https://nexwall.kodnextech.com/wallpaper-api/license).
 
 - The free plan also allows up to 60 requests per minute.
+- No key yet? `GET https://nexwall.kodnextech.com/api/developer/v1/demo/wallpapers` returns up to 10 Free-plan wallpapers per request with no key or signup (10 requests/minute, 30/day per IP).
 - Responses include `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Reset` and `X-Developer-Api-Plan` headers; the JSON body includes `plan` and `remaining_requests_today`.
 - On **HTTP 429** the repository throws `NexWallException` with `retryAfterSeconds` from the `Retry-After` header. The UI shows it and does not retry automatically.
 - State lives in the `ViewModel`, so rotating the screen or going back does not refetch.
